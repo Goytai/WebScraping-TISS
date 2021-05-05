@@ -5,15 +5,24 @@
   "license": "MIT",
   "scripts": {
     "dev": "tsnd --transpile-only --ignore-watch node_modules --respawn src/index.ts",
-    "start": "tsnd --transpile-only --ignore-watch node_modules src/index.ts"
+    "start": "tsnd --transpile-only --ignore-watch node_modules src/index.ts",
+    "tsc": "tsc"
   },
   "devDependencies": {
     "@types/node": "^15.0.2",
+    "@typescript-eslint/eslint-plugin": "4",
+    "eslint": "7",
+    "eslint-config-standard-with-typescript": "^20.0.0",
+    "eslint-plugin-import": "2",
+    "eslint-plugin-node": "11",
+    "eslint-plugin-promise": "4",
     "ts-node-dev": "^1.1.6",
     "typescript": "^4.2.4"
   },
   "dependencies": {
     "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.6"
-  }
+  },
+  "repository": "https://github.com/Goytai/WebScraping-TISS.git",
+  "author": "Goytai <dev.goytai@gmail.com>"
 }
